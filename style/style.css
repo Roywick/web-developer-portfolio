@@ -53,7 +53,7 @@ nav ul a {
     background-image: url(../images/developer.png), url(../images/header_bg.png);
     background-repeat: no-repeat;
     background-position: top left, bottom right;
-   
+
 }
 
 .banner {
@@ -99,89 +99,114 @@ nav ul a {
     font-size: 18px;
     font-weight: 400;
 }
-.bg-secondary{
+
+.bg-secondary {
     background: rgb(255, 248, 243);
-} 
- main{
+}
+
+main {
     max-width: 1140px;
     margin: 0 auto;
- }
- main section{
+}
+
+main section {
     margin-top: 130px;
     margin-bottom: 130px;
- }
- .about{
+}
+
+.about {
     border-radius: 10px;
     padding: 130px 150px;
     text-align: center;
- }
- .about-items{
+}
+
+.about-items {
     display: flex;
     justify-content: space-around;
- }
- .item-description{
+}
+
+.item-description {
     font-weight: 700;
 
- }
- .text-centre{
+}
+
+.text-centre {
     text-align: center;
- }
- .section-des{
+}
+
+.section-des {
     text-align: center;
     margin-left: 145px;
     margin-right: 145px;
- }
- .skills-conteiner{
+}
+
+.skills-conteiner {
     display: flex;
     gap: 24px;
- }
- .skill{
+}
+
+.skill {
     border-radius: 5px;
     padding: 30px;
     box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
     width: 201px;
-height: 196px;
- }
- .skill-description, .section-des{
+    height: 196px;
+}
+
+.skill-description,
+.section-des {
     color: rgb(117, 117, 117);
- }
- .resume-conteiner{
+}
+
+.resume-conteiner {
     display: flex;
     gap: 24px;
- }
- .experience-sub-title{
+}
+
+.experience-sub-title {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 20px;
- }
- .experience-description , .experience-sub-title{
+}
+
+.experience-description,
+.experience-sub-title {
     color: rgb(117, 117, 117);
- }
- .resume hr{
+}
+
+.resume hr {
     margin: 30px 5px;
- }
- .resume-cv{
+}
+
+.resume-cv {
     margin-top: 50px;
- }
- .experience-title{
+}
+
+.experience-title {
     font-size: 25px;
     font-weight: 700;
     color: rgb(71, 71, 71);
- }
- .resume-column-title{
+}
+
+.resume-column-title {
     font-size: 30px;
     font-weight: 700;
     color: rgb(71, 71, 71);
- }
- footer{
+}
+
+footer {
     padding: 130px 230px;
     display: flex;
     gap: 100px;
- }
- .footer-column{
+}
+
+.footer-column {
     width: 50%;
- }
- footer input[type="text"],footer input[type="email"],footer textarea{
+}
+
+footer input[type="text"],
+footer input[type="email"],
+footer textarea {
     height: 64px;
     border-radius: 5px;
     background-color: white;
@@ -191,4 +216,65 @@ height: 196px;
     padding: 10px 20px;
     margin-bottom: 24px;
     border: none;
- }
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+    .skills-conteiner, .banner {
+        flex-direction: column;
+       
+    }
+    .resume-conteiner,
+    footer {
+        flex-direction: column;
+
+    }
+    .banner{
+        margin: 20px;
+    }
+
+    footer,.about {
+        padding: 20px;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    footer input[type="text"],
+    footer input[type="email"],
+    footer textarea {
+        width: calc(100% - 40px);
+        /*space must deuha lagbe */
+    }
+
+    .text-centre {
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    .skill{
+     width: 80%;
+     margin: 0 auto;
+    }
+    .about-items{
+       flex-direction: column;
+    }
+    .resume{
+        margin: 0 auto;
+    }
+    nav{
+       flex-direction: column;
+    }
+    .header{
+        background-image: none;
+    }
+    .banner-picture{
+    width: 100%;
+    }
+    .btn-1{
+        margin-bottom: 20px;
+    }
+}
